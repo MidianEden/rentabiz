@@ -4,25 +4,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Rent-A-Biz</title>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <style>
+    /* Global Styles */
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: white;
+      color: #333;
+    }
+
+    /* Header with Red Box Title */
+    header {
+      background-color: #e74c3c; /* Red Background */
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    h1 {
+      color: white;
+      font-size: 3rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      padding: 10px 20px;
+      margin: 0;
+      background-color: #c0392b;  /* Darker Red */
+      display: inline-block;
+      border-radius: 5px;
+      box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Content Section */
+    .content {
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    .content h2 {
+      color: #e74c3c;
+      font-size: 2.5rem;
+    }
+
+    /* Button Styles */
+    button {
+      background-color: #f39c12; /* Yellow Button */
+      color: white;
+      padding: 10px 20px;
+      font-size: 1.2rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    button:hover {
+      background-color: #e67e22; /* Darker Yellow on Hover */
+    }
+
+    /* Footer */
+    footer {
+      background-color: #f1c40f; /* Yellow Footer */
+      color: #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+  </style>
 </head>
 <body>
+
+  <!-- Header with Red Box Title -->
   <header>
-    <div class="title-box">
-      <h1>Rent-A-Biz</h1>
-    </div>
+    <h1 id="site-title">Rent-A-Biz</h1>
   </header>
 
-  <main>
-    <section class="content">
-      <h2>Your Business Awaits</h2>
-      <p>Find the perfect business to rent and start your entrepreneurial journey today!</p>
-    </section>
-  </main>
+  <!-- Main Content Section -->
+  <div class="content">
+    <h2>Find Your Business Today!</h2>
+    <p>Rent businesses and kick-start your entrepreneurial journey.</p>
+    <button id="changeTitleBtn">Change Title</button> <!-- Button to change the title -->
+  </div>
 
+  <!-- Footer -->
   <footer>
-    <p>&copy; 2025 Rent-A-Biz. All rights reserved.</p>
+    <p>&copy; 2025 Rent-A-Biz</p>
   </footer>
+
+  <script>
+    // Change title functionality
+    document.getElementById("changeTitleBtn").addEventListener("click", function() {
+      var titles = [
+        "Rent-A-Biz: Your Business Hub",
+        "Business Awaits You",
+        "Start Your Dream Business Now!",
+        "Rent a Business Today!"
+      ];
+      
+      var randomTitle = titles[Math.floor(Math.random() * titles.length)];
+      document.getElementById("site-title").innerText = randomTitle;
+    });
+  </script>
+
 </body>
 </html>
+
