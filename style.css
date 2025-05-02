@@ -1,148 +1,69 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Global Styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #333333;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  background-color: white;  /* Vintage clean white background */
   color: #333;
+  line-height: 1.6;
 }
 
-.container {
-  width: 90%;
+/* Title Box Styles (Red Box with Title) */
+header {
+  width: 100%;
+  background-color: #e74c3c;  /* Vintage red */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.title-box h1 {
+  color: white;
+  font-size: 3rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0;
+  padding: 10px 20px;
+  background-color: #c0392b;  /* Slightly darker red for contrast */
+  display: inline-block;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);  /* Vintage shadow effect */
+}
+
+/* Content Section Styles */
+.content {
+  text-align: center;
+  padding: 50px 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
-header {
-  background-color: #2d3a4b;
-  color: white;
-  padding: 20px 0;
-}
-
-header h1 {
-  margin-left: 20px;
-  font-size: 2rem;
-}
-
-nav a {
-  margin-right: 25px;
-  text-decoration: none;
-  color: white;
-  font-weight: 500;
-}
-
-.hero {
-  background: url('https://via.placeholder.com/1500') center center/cover no-repeat;
-  padding: 100px 20px;
-  text-align: center;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.hero h2 {
-  font-size: 3rem;
-  margin-bottom: 10px;
-}
-
-.hero p {
-  font-size: 1.2rem;
+.content h2 {
+  color: #e74c3c;  /* Red color for headings */
+  font-size: 2.5rem;
+  font-weight: 700;
   margin-bottom: 20px;
 }
 
-.cta-button {
-  background-color: #3498db;
-  padding: 12px 30px;
-  color: white;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+.content p {
+  color: #555;
+  font-size: 1.1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.8;
 }
 
-.cta-button:hover {
-  background-color: #2980b9;
-}
-
-.listings {
-  padding: 60px 20px;
-}
-
-.listings h2 {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-bottom: 40px;
-}
-
-.card-container {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  flex-wrap: wrap;
-}
-
-.card {
-  background-color: white;
-  border-radius: 10px;
-  padding: 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  width: 30%;
-  text-align: center;
-  transition: transform 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-10px);
-}
-
-.card button {
-  background-color: #3498db;
-  color: white;
-  padding: 10px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-.card button:hover {
-  background-color: #2980b9;
-}
-
-.contact {
-  background-color: #fff;
-  padding: 60px 20px;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-  border-radius: 10px;
-  margin-bottom: 60px;
-}
-
-.contact form {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.contact input,
-.contact textarea {
-  padding: 15px;
-  font-size: 1rem;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-}
-
+/* Footer Styles */
 footer {
-  background-color: #2d3a4b;
-  color: white;
-  padding: 20px 0;
   text-align: center;
+  background-color: #f1c40f;  /* Vintage yellowish gold footer */
+  padding: 10px 0;
+  font-size: 0.9rem;
+  color: #333;
 }
 
-footer p {
-  font-size: 1rem;
+/* Vintage Texture Background (Optional) */
+body {
+  background: url('https://www.transparenttextures.com/patterns/asfalt.png'), #fff;  /* Optional light texture */
+  background-attachment: fixed;
+  background-size: 100%;
 }
