@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rent A Business</title>
-  <link rel="stylesheet" href="styles.css" />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Rent A Business - Find Your Perfect Match</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header>
     <div class="container">
       <h1>Rent A Business</h1>
       <nav>
+        <a href="#home">Home</a>
         <a href="#listings">Listings</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -20,42 +21,41 @@
 
   <section class="hero">
     <div class="container">
-      <h2>Find Businesses Ready to Rent</h2>
-      <p>Pop-ups, storefronts, trucks, and more — available now.</p>
+      <h2>Your Future Business Starts Here</h2>
+      <p>Explore a variety of businesses available for rent. Quick, easy, and flexible leasing options.</p>
+      <a href="#listings" class="cta-button">Browse Listings</a>
     </div>
   </section>
 
   <section id="listings" class="listings container">
-    <h2>Available Businesses</h2>
-    <div class="card-grid">
+    <h2>Featured Businesses</h2>
+    <div class="card-container">
       <div class="card">
-        <h3>Coffee Shop – Austin</h3>
-        <p>Fully furnished, busy neighborhood, move-in ready.</p>
-        <button>Request Info</button>
+        <h3>Coffee Shop - Austin</h3>
+        <p>Fully furnished and ready to operate with high foot traffic.</p>
+        <button>Learn More</button>
       </div>
       <div class="card">
-        <h3>Retail Store – LA</h3>
-        <p>Downtown location, foot traffic, flexible lease terms.</p>
-        <button>Request Info</button>
+        <h3>Retail Store - Los Angeles</h3>
+        <p>Perfect location downtown with prime storefront visibility.</p>
+        <button>Learn More</button>
       </div>
       <div class="card">
-        <h3>Food Truck – Chicago</h3>
-        <p>All equipment included. Start serving today.</p>
-        <button>Request Info</button>
+        <h3>Food Truck - Chicago</h3>
+        <p>Modern food truck with top-quality equipment included.</p>
+        <button>Learn More</button>
       </div>
     </div>
   </section>
 
-  <section id="contact" class="contact">
-    <div class="container">
-      <h2>Contact Us</h2>
-      <form>
-        <input type="text" placeholder="Your Name" required />
-        <input type="email" placeholder="Your Email" required />
-        <textarea placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
-      </form>
-    </div>
+  <section id="contact" class="contact container">
+    <h2>Get In Touch</h2>
+    <form>
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit" class="cta-button">Send Message</button>
+    </form>
   </section>
 
   <footer>
@@ -63,5 +63,7 @@
       <p>&copy; 2025 Rent A Business. All rights reserved.</p>
     </div>
   </footer>
+
+  <script src="scripts.js"></script>
 </body>
 </html>
