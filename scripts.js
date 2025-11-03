@@ -1,5 +1,5 @@
 // --- Smooth Scroll for Anchor Links ---
-// This will work with the "How It Works" and "Listings" nav links
+// This will work with the "How It Works" and "Opportunities" nav links
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   anchor.addEventListener('click', function (e) {
     e.preventDefault();
@@ -21,10 +21,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 
-// --- Live Search Filter for Business Listings ---
-// This is the new, core functionality for the site
+// --- Live Search Filter for Investment Listings ---
+// Updated to search the new card content
 document.getElementById('search-bar').addEventListener('keyup', function() {
-  // Get the search term and convert to lower case for case-insensitive matching
+  // Get the search term and convert to lower case
   let searchTerm = this.value.toLowerCase();
   
   // Get all the listing cards
@@ -32,14 +32,15 @@ document.getElementById('search-bar').addEventListener('keyup', function() {
 
   // Loop through each card
   listingCards.forEach(function(card) {
-    // Get the text content from the card's h3 title and p category
+    // Get the text content from the card's title, category, and description
     let title = card.querySelector('h3').textContent.toLowerCase();
     let category = card.querySelector('.category').textContent.toLowerCase();
+    let description = card.querySelector('.description').textContent.toLowerCase();
 
-    // Check if the search term is in the title OR the category
-    if (title.includes(searchTerm) || category.includes(searchTerm)) {
+    // Check if the search term is in the title, category, OR description
+    if (title.includes(searchTerm) || category.includes(searchTerm) || description.includes(searchTerm)) {
       // If it matches, show the card
-      card.style.display = 'block';
+      card.style.display = 'flex'; // Use 'flex' since the card is a flex container
     } else {
       // If it doesn't match, hide the card
       card.style.display = 'none';
